@@ -1,0 +1,45 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        style.
+         table{
+            margin:20px 0px;
+
+         }
+         .heading{
+            font-size: 30px;
+            font-weight: 800;
+            font-family: 'Gill Sans';
+            text-align: center;
+         }
+         table{
+            margin: 10px;
+            background-color: aliceblue;
+            font-size: 15px;
+         }
+         th,td{
+            padding: 5px;
+            text-align: left;
+            border:1px solid black
+         }
+    body 
+     div.heading EmployeeData
+     table(width='100%', cellspacing='0', cellpadding='0', border='0', bgcolor='#F2F2F2')
+        thead
+            tr
+              th Name
+              th Contact
+              th Salary
+              th Profile
+              th Technology
+        tbody
+          each data in employeeData
+              tr
+                td #{data.empName}
+                td #{data.empContact.$numberInt}
+                td #{data.empSalary.$numberInt}
+                td #{data.empProfile}
+                td #{data.empTechnologies}

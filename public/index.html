@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .page{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 110%;
+        margin: -10px;
+       }
+       .left{
+        background-color: black;
+       }
+       .right{
+        vertical-align: middle;
+        text-align: center;
+        padding: 20% 8%;
+       }
+       input{
+        width: 50%;
+        margin: 10px;
+       }
+       .heading{
+        margin: 10px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       form{
+        margin: auto;
+        background-color: aliceblue;
+        border: 1px solid rgb(20, 18, 7);
+        box-shadow: 1px 1px 1px skyblue;
+        width: fit-content;
+        height:auto;
+        padding: 30px;
+        border-radius: 10px;
+       }
+       input{
+        padding: 5px;
+        border-radius: 3px;
+       }
+       .submit{
+        background-color: black;
+        color: aliceblue;
+        border: 0px;
+       }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="left"></div>
+        <div class="right">
+            
+            <form action="/login" method="post">
+                <div class="heading">Login Form</div>
+            <input type="text" name="userName" placeholder="Enter User Name" required>
+            <input type="password" name="password" placeholder="Enter User Name" required>
+            <input type="submit" value="Login" class="submit">
+        </form></div>
+    </div>
+</body>
+</html>
